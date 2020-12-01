@@ -18,19 +18,19 @@ function App() {
               <li className="nav-item active">
                 <a className="nav-link" href="/report">Report</a>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <a className="nav-link" href="/dashboard">Dashboard</a>
-              </li> */}
-              {/* <li className="nav-item">
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/tile">Tile</a>
-              </li> */}
+              </li>
             </ul>
           </div>
         </nav>
         <Switch>
           <Route path="/report" component={Report}></Route>
-          {/* <Route path="/dashboard" component={Dashboard}></Route> */}
-          {/* <Route path="/tile" component={Tile}></Route> */}
+          <Route path="/dashboard" component={Dashboard}></Route>
+          <Route path="/tile" component={Tile}></Route>
           <Route path="**" render={() => <Redirect to="/report" />}></Route>
         </Switch>
       </Router>
